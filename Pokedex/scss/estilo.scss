@@ -1,0 +1,37 @@
+/*COLORES PRINCIPALES*/
+/*--------------------*/
+/*Color del fondo del Body*/
+$fondo: #E5E7E9;
+/*Color de fondo de Card*/
+$fondoCard: #2874A6; 
+
+
+body{
+  background-color: $fondo !important;
+}
+/*Se establece el tipo de fuente a la etiqueta p*/
+p{
+  
+  font-family: 'Edu SA Beginner', cursive;
+}
+.fondo-card{
+  background-color: $fondoCard !important;
+}
+.tarjeta-imagen{
+  background-color: #FBFCFC;
+}
+
+/*Colocar en mayuscula la letra inicial de los titulos de la Card*/
+.card{ 
+  &-title {
+    text-transform: capitalize;
+  }
+}
+
+/*Manejo de tamaño de letra de acuerdo a la pantalla en entorno 768px*/
+@media (min-width: 768px){
+  html{
+    font-size: 16px;  
+  }
+
+}
